@@ -9,23 +9,43 @@ function notANumber(number) {
   }
 } notANumber(1)
 
-
-function notANumber(number) {
-  let inputNumber = parseInt(number);
-  if (inputNumber === Number) {
-    return true;
+function number1(number) {
+  let numberInput = number.toString()
+  numberArray = [numberInput.split("")]
+    for (i = 0; i < numberArray.length; i+=1) {
+    if (numberInput.includes(2)) {
+    return 'Boop!';
   } else {
-    return false;
-  }
-} notANumber(1)
+    return numberInput
+  }}
+} number1(111)
 
-function notANumber(number) {
-  if (parseInt(number) !== Number) {
-    alert('Please enter a number')
-  } else {
-    return isANumber = parseInt(number)
-  }
-} notANumber('a')
+// Not a number function (working)
+// function notANumber(number) {
+//   let inputNumber = parseInt(number);
+//   if (isNaN(inputNumber) === false) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// } notANumber(1)
+
+// function notANumber(number) {
+//   let inputNumber = parseInt(number);
+//   if (inputNumber === Number) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// } notANumber(1)
+
+// function notANumber(number) {
+//   if (parseInt(number) !== Number) {
+//     alert('Please enter a number')
+//   } else {
+//     return isANumber = parseInt(number)
+//   }
+// } notANumber('a')
 
 
 function number1(number) {

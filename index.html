@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon-32x32.png">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Roboger's Neighborhood</title>
+  <title>Mr. Roboger's Numberhood</title>
 </head>
 <body>
-  <div class=container>
-    <h1>Mr. Roboger's Neighborhood</h1>
-    <h2>Welcome to Mr. Roboger's Neighborhood. If you email Mr. Roboger a number, he will send you a special message.</h2>
-    <form id="numberInput">
-      <div class="form-group">
-        <label for="numberInput">Place number in emailbox:</label>
-        <input id="number1" class="form-control" type="text">
-      </div>
-      <button id="submitButton">Send Mr. Roboger your number!</button>
-    </form>
-    <div id="outputField">You got an email back. Mr. Roboger said:<span id="output"></span></div>
+  <div class="container">
+    <div id="jumbotron">
+      <h3>Mr. Roboger's Numberhood</h3>
+      <img src="img/mrrobogers.jpg">
+      <h4>Welcome to Mr. Roboger's Numberhood. If you email Mr. Robogers a number, he will send you a special message.</h4>
+      <form id="numberInput">
+        <div class="form-group">
+          <label id="inputLabel" for="numberInput">Place number in emailbox:</label>
+          <input id="number1" class="form-control" type="text">
+        </div>
+        <button id="submitButton">Send Mr. Roboger your number!</button>
+      </form>
+      <div id="outputField">You got an email back. Mr. Roboger said:<span id="output"></span></div>
+    </div>
   </div>
 </body>
 </html>
