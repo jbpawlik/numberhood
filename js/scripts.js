@@ -1,8 +1,6 @@
 //Business Logic
 
 
-
-
 function numberhood(number) {
   let numberInput = [parseInt(number)];
   numberInput.toString().split('')
@@ -12,9 +10,7 @@ function numberhood(number) {
   } else {
     return numberInput
   }}
-} numberhood(11)
-
-
+} numberhood(111)
 
 
 function numberhood(number) {
