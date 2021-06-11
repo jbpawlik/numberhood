@@ -1,9 +1,9 @@
 //Business Logic
 
-
-let array = [1, 2]
+function numberhood(number) {
+  let numberInputer = [parseInt(number)]
+  
 array.includes(1)
-
 
 
 
