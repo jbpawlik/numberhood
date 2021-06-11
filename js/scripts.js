@@ -3,8 +3,8 @@
 
 
 function numberhood(number) {
-  let numberInput = parseInt(111)
-  ("" + numberInput).split()
+  let numberInput = '111'
+  numberArray = [numberInput.split("")]
 } 
 
 
