@@ -3,14 +3,54 @@
 
 
 function numberhood(number) {
-  let numberInput = [parseInt(number)];
-  for (i = 0; i <= numberInput.length; i+=1) {
-    if (numberInput.includes(1)) {
-    return 'Beep!';
-  } else {
-    return numberInput
-  }}
+  let numberInput = parseInt(111)
+  ("" + numberInput).split()
+} 
+
+
+
+function numberhood(number) {
+  const numberInput = [parseInt(number)]
+  let checkFor1 = false;
+  numberInput.forEach(function(element) {
+    if (numberInput.includes(1) === true) {
+      checkFor1 = true;
+    } else {
+      checkFor1 = false
+    }
+    console.log(checkFor1)
+  })
 } numberhood(11)
+
+
+
+function numberhood(number) {
+  const numberInput = [parseInt(number)]
+  let checkFor1 = false;
+  numberInput.forEach(function(element) {
+    if (numberInput.includes(1) === true) {
+      checkFor1 = true;
+    } else {
+      checkFor1 = false
+    }
+    console.log(checkFor1)
+  })
+} numberhood(11)
+
+
+
+
+
+
+// function numberhood(number) {
+//   let numberInput = [parseInt(number)];
+//   for (i = 0; i <= numberInput.length; i+=1) {
+//     if (numberInput.includes(1)) {
+//     return 'Beep!';
+//   } else {
+//     return numberInput
+//   }}
+// } numberhood(11)
 
 
 
