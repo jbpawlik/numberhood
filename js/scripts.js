@@ -1,40 +1,38 @@
 //Business Logic
 
 
-function numberhood(number) {
-  let numberInput = [parseInt(number)];
-  numberInput.toString().split('')
-  for (i = 0; i < numberInput.length; i+=1) {
-    if (numberInput[i] === 1) {
-    return 'Beep!';
-  } else {
-    return numberInput
-  }}
-} numberhood(111)
-
-
-function numberhood(number) {
-  let numberInput = [parseInt(number)];
-  numberInput.toString().split('')
-  for (i = 0; i <= numberInput.length; i++) {
-    if (numberInput[i] === 1) {
-    return 'Beep!';
-  } else {
-    return numberInput
-  }}
-} numberhood(11)
+let array = [1, 2]
+array.includes(1)
 
 
 
-function numberhood(number) {
-  let numberInput = [parseInt(number)];
-  for (i = 0; i < numberInput.length; i++) {
-    if (numberInput.indexOf(i) === 1) {
-    return 'Beep!';
-  } else {
-    return numberInput
-  }}
-} numberhood(11)
+
+// Trying to take input, split it into an array, and check 
+// function numberhood(number) {
+//   let numberInput = [parseInt(number)];
+//   numberInput.join(" ");
+//   numberInput.split();
+//   console.log(numberInput)
+//   for (i = 0; i < numberInput.length; i+=1) {
+//     if (numberInput.includes(1)) {
+//     return 'Beep!';
+//   } else {
+//     return numberInput
+//   }}
+// }
+
+
+// function numberhood(number) {
+//   let numberInput = [parseInt(number)];
+//   numberInput.toString().split('')
+//   for (i = 0; i <= numberInput.length; i++) {
+//     if (numberInput[i] === 1) {
+//     return 'Beep!';
+//   } else {
+//     return numberInput
+//   }}
+// } numberhood(11)
+
 
 
 // function numberhood(number) {
@@ -80,3 +78,16 @@ function numberhood(number) {
 //     return numberInput
 //   }
 // } numberhood(1)
+
+//User Interface Logic
+
+$(document).ready(function() {
+  $('form#numberInput').submit(function(event) {
+    event.preventDefault();
+  
+    const number1 = $("#number1").val();
+    let result = numberhood(number1)
+
+    $("#output").append(result)
+  })
+});

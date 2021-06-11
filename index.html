@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +11,15 @@
 <body>
   <div class=container>
     <h1>Mr. Roboger's Neighborhood</h1>
-    <h2>Welcome to Mr. Roboger's Neighborhood. If you give Mr. Roboger a number, he will give you a special message.</h2>
+    <h2>Welcome to Mr. Roboger's Neighborhood. If you mail Mr. Roboger a number, he will give you a special message.</h2>
     <form id="numberInput">
       <div class="form-group">
-        <label for="numberInput">Send Mr. Roboger your number!</label>
-        <input in="number1" type="number">
+        <label for="numberInput">Place number in mailbox:</label>
+        <input id="number1" class="form-control" type="text">
       </div>
-      
+      <button id="submitButton">Send Mr. Roboger your number!</button>
     </form>
+    <div id="output">You got your letter back. My Roboger said:</div>
   </div>
 </body>
 </html>
