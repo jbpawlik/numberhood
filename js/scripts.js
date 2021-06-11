@@ -1,13 +1,15 @@
 //Business Logic
 
 function numberhood(number) {
-  let numberInputer = [parseInt(number)]
+  let numberInput = [parseInt(number)]
   
-array.includes(1)
+  
+
+  numberhood(111)
 
 
 
-// Trying to take input, split it into an array, and check 
+// Trying to take input, split it into an array, and check whether array contains 1
 // function numberhood(number) {
 //   let numberInput = [parseInt(number)];
 //   numberInput.join(" ");
