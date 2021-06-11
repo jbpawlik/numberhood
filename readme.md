@@ -14,6 +14,29 @@ Mr. Roboger's Neighborhood uses custom HTML and CSS. JavaScript and JQuery are u
 
 Alternately, visit [Github Pages](http://jbpawlik.github.io/numberhood) to view the site.
 
+### __Tests/Specifications__
+Describe numberhood()
+
+Test: "Should return the inputted number"
+Code:
+  numberhood(21)
+Expected Output: "21" 
+
+Test: "If input is not a number, return NaN"
+Code:
+  numberhood('a')
+Expected Output: NaN
+
+Test: "If number is 1, return 'Beep!'"
+Code:
+  numberhood(1)
+Expected Output: "Beep!"
+
+Test: "If number includes 1, return 'Beep!'"
+Code: 
+  numberhood(21)
+  Expected Output: "Beep!"
+
 ### __Known Bugs / Future Goals__
 No bugs have been found or reported. Please contact the author if you experience poor performance.
 
