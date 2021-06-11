@@ -2,6 +2,23 @@
 
 
 
+
+
+
+
+
+function numberhood(number) {
+  let numberInput = number.toString()
+  numberArray = [numberInput.split("")]
+    for (i = 0; i < numberArray.length; i+=1) {
+    if (numberInput.includes(1)) {
+    return 'Beep!';
+  } else {
+    return numberInput
+  }}
+} numberhood(111)
+
+
 function numberhood(number) {
   let numberInput = '111'
   numberArray = [numberInput.split("")]
