@@ -1,13 +1,22 @@
 //Business Logic
 
+
 function notANumber(number) {
-  if (parseInt(number) === 'NaN') {
+  let inputNumber = parseInt(number);
+  if (inputNumber === RegExp('^[0-9]$')) {
+    return true;
+  } else {
+    return false;
+  }
+} notANumber(1)
+
+function notANumber(number) {
+  if (parseInt(number) !== Number) {
     alert('Please enter a number')
   } else {
     return isANumber = parseInt(number)
   }
 } notANumber('a')
-
 
 
 function numberhood(number) {
