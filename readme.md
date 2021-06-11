@@ -35,7 +35,12 @@ Expected Output: "Beep!"
 Test: "If number includes 1, return 'Beep!'"
 Code: 
   numberhood(21)
-  Expected Output: "Beep!"
+Expected Output: "Beep!"
+
+Test: "If number includes 2, return 'Boop!'"
+Code:
+  numberhood(21)
+Expected Output: "Boop!"
 
 ### __Known Bugs / Future Goals__
 No bugs have been found or reported. Please contact the author if you experience poor performance.

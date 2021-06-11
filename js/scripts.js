@@ -1,9 +1,12 @@
 //Business Logic
 
-
-
-
-
+function notANumber(number) {
+  if (parseInt(number) === 'NaN') {
+    alert('Please enter a number')
+  } else {
+    return isANumber = parseInt(number)
+  }
+} notANumber('a')
 
 
 
@@ -19,40 +22,41 @@ function numberhood(number) {
 } numberhood(111)
 
 
-function numberhood(number) {
-  let numberInput = '111'
-  numberArray = [numberInput.split("")]
-} 
+
+// function numberhood(number) {
+//   let numberInput = '111'
+//   numberArray = [numberInput.split("")]
+// } 
 
 
 
-function numberhood(number) {
-  const numberInput = [parseInt(number)]
-  let checkFor1 = false;
-  numberInput.forEach(function(element) {
-    if (numberInput.includes(1) === true) {
-      checkFor1 = true;
-    } else {
-      checkFor1 = false
-    }
-    console.log(checkFor1)
-  })
-} numberhood(11)
+// function numberhood(number) {
+//   const numberInput = [parseInt(number)]
+//   let checkFor1 = false;
+//   numberInput.forEach(function(element) {
+//     if (numberInput.includes(1) === true) {
+//       checkFor1 = true;
+//     } else {
+//       checkFor1 = false
+//     }
+//     console.log(checkFor1)
+//   })
+// } numberhood(11)
 
 
 
-function numberhood(number) {
-  const numberInput = [parseInt(number)]
-  let checkFor1 = false;
-  numberInput.forEach(function(element) {
-    if (numberInput.includes(1) === true) {
-      checkFor1 = true;
-    } else {
-      checkFor1 = false
-    }
-    console.log(checkFor1)
-  })
-} numberhood(11)
+// function numberhood(number) {
+//   const numberInput = [parseInt(number)]
+//   let checkFor1 = false;
+//   numberInput.forEach(function(element) {
+//     if (numberInput.includes(1) === true) {
+//       checkFor1 = true;
+//     } else {
+//       checkFor1 = false
+//     }
+//     console.log(checkFor1)
+//   })
+// } numberhood(11)
 
 
 
@@ -152,6 +156,6 @@ $(document).ready(function() {
     const number1 = $("#number1").val();
     let result = numberhood(number1)
 
-    $("#output").append(result)
+    $("#output").text(result)
   })
 });
