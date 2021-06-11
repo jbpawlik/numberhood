@@ -1,21 +1,26 @@
 //Business Logic
 
-function numberhood(number) {
-  let numberInput = [parseInt(number)]
-  
-  
 
-  numberhood(111)
+
+function numberhood(number) {
+  let numberInput = [parseInt(number)];
+  for (i = 0; i <= numberInput.length; i+=1) {
+    if (numberInput.includes(1)) {
+    return 'Beep!';
+  } else {
+    return numberInput
+  }}
+} numberhood(11)
+
 
 
 
 // Trying to take input, split it into an array, and check whether array contains 1
 // function numberhood(number) {
 //   let numberInput = [parseInt(number)];
-//   numberInput.join(" ");
-//   numberInput.split();
-//   console.log(numberInput)
-//   for (i = 0; i < numberInput.length; i+=1) {
+//   let numberArray = numberInput.join(" ").split();
+//   console.log(numberArray)
+//   for (i = 0; i < numberArray.length; i+=1) {
 //     if (numberInput.includes(1)) {
 //     return 'Beep!';
 //   } else {
