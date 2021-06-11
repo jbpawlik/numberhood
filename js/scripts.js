@@ -5,9 +5,35 @@
 
 function numberhood(number) {
   let numberInput = [parseInt(number)];
+  numberInput.toString().split('')
+  for (i = 0; i < numberInput.length; i+=1) {
+    if (numberInput[i] === 1) {
+    return 'Beep!';
+  } else {
+    return numberInput
+  }}
+} numberhood(11)
+
+
+
+
+function numberhood(number) {
+  let numberInput = [parseInt(number)];
+  numberInput.toString().split('')
+  for (i = 0; i <= numberInput.length; i++) {
+    if (numberInput[i] === 1) {
+    return 'Beep!';
+  } else {
+    return numberInput
+  }}
+} numberhood(11)
+
+
+
+function numberhood(number) {
+  let numberInput = [parseInt(number)];
   for (i = 0; i < numberInput.length; i++) {
-    let a = numberInput[i].includes(1);
-    if (a = true) {
+    if (numberInput.indexOf(i) === 1) {
     return 'Beep!';
   } else {
     return numberInput
