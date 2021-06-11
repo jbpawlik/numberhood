@@ -1,9 +1,18 @@
 //Business Logic
 
+function notANumber(number) {
+  let inputNumber = parseInt(number);
+  if (isNaN(inputNumber) === false) {
+    return true;
+  } else {
+    return false;
+  }
+} notANumber(1)
+
 
 function notANumber(number) {
   let inputNumber = parseInt(number);
-  if (inputNumber === RegExp('^[0-9]$')) {
+  if (inputNumber === Number) {
     return true;
   } else {
     return false;
@@ -19,7 +28,18 @@ function notANumber(number) {
 } notANumber('a')
 
 
-function numberhood(number) {
+function number1(number) {
+  let numberInput = number.toString()
+  numberArray = [numberInput.split("")]
+    for (i = 0; i < numberArray.length; i+=1) {
+    if (numberInput.includes(2)) {
+    return 'Boop!';
+  } else {
+    return numberInput
+  }}
+} number1(111)
+
+function number2(number) {
   let numberInput = number.toString()
   numberArray = [numberInput.split("")]
     for (i = 0; i < numberArray.length; i+=1) {
@@ -28,9 +48,18 @@ function numberhood(number) {
   } else {
     return numberInput
   }}
-} numberhood(111)
+} number2(111)
 
-
+function number3(number) {
+  let numberInput = number.toString()
+  numberArray = [numberInput.split("")]
+    for (i = 0; i < numberArray.length; i+=1) {
+    if (numberInput.includes(3)) {
+    return "Won't you be my neighbor?";
+  } else {
+    return numberInput
+  }}
+} number3(111)
 
 // function numberhood(number) {
 //   let numberInput = '111'
