@@ -42,3 +42,6 @@ h3, h4, #outputField{
 #output {
   display: block;
 }
+#outputField {
+  display: none;
+}

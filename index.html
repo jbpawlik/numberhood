@@ -22,13 +22,13 @@
       <h4>Welcome to Mr. Roboger's Numberhood. If you email Mr. Robogers a number, he will send you a special message.</h4>
       <form id="numberInput">
         <div class="form-group">
-          <label id="inputLabel" for="numberInput">Put your number in the emailbox. The Mr. McFeelybot9000 will deliver it for you.</label>
-          <input id="userNumber" class="form-control" type="text">
+          <label id="inputLabel" for="numberInput">Put your number in the emailbox. The Mr. McFeelyBot9000 will deliver it for you.</label>
+          <input id="userNumber" class="form-control" type="text" required placeholder="What is your number?" oninvalid="this.setCustomValidity('Please put a number here!')">
         </div>
         <button id="submitButton">Send Mr. Roboger your number!</button>
       </form>
       <div id="outputField">
-        <p>You got an email back. Mr. Roboger said:<span id="output"></span></p>
+        <p>You got an email back! Mr. Roboger said:<span id="output"></span></p>
       </div>
     </div>
   </div>
