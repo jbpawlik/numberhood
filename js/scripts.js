@@ -24,6 +24,11 @@ function numberhood(number) {
   }
 }
 
+function viralLoad(number) {
+  let virusArray = number.toString().split("");
+  return virusArray.map(digits => digits * 100).join(",") 
+}
+
 //User Interface Logic
 
 $(document).ready(function() {
@@ -56,8 +61,9 @@ $(document).ready(function() {
     if (notANumber(userNumber) === false) {
       alert('ERROR: NOT A NUMBER; VIRUS DEFEATED')
     } else {
+    let virus = viralLoad(userNumber)
     alert('You won')
-    alert('10000000')
+    alert(virus)
     alert("viruses!!!!!");
     }
   });
