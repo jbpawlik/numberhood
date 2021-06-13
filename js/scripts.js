@@ -13,12 +13,12 @@ function numberhood(number) {
   let numberInput = number.toString()
   numberArray = [numberInput.split("")]
     for (i = 0; i < numberArray.length; i+=1) {
-    if (notaNumber(number) === true && numberInput.includes(1)) {
-      return 'includes1';
-    } else if (notaNumber(number) === true && numberInput.includes(2)) {
-      return 'includes2';
-    } else if (notaNumber(number) === true && numberInput.includes(3)) {
+    if (notANumber(number) === true && numberInput.includes(3)) {
       return 'includes3';
+    } else if (notANumber(number) === true && numberInput.includes(2)) {
+      return 'includes2';
+    } else if (notANumber(number) === true && numberInput.includes(1)) {
+      return 'includes1';
     }
   }
 }
@@ -105,8 +105,8 @@ $(document).ready(function() {
       $("#output").text('ERROR! ERROR! ERROR!  DOES NOT COMPUTE; USER DID NOT ENTER NUMBER; PRINT: "IT IS A TERRIBLE DAY IN THE NEIGHBORHOOD :("  WILL SELF DESTRUCT IF NO NUMBER ENTERED! 10... 9... 8...')
     } else if (notANumber(userNumber) === true) {
     $("#output").text('COMPUTING... COMPUTING...COMPUTING...')
-    } 
-    if (notANumber(userNumber) === true) {
+    }  
+
     if (numberhood(userNumber) === 'includes3') {
       $("#numberOutput").text(result + "!!! MY FAVORITE NUMBER. WON'T YOU BE MY NEIGHBOR?")
     } else if (numberhood(userNumber) === 'includes2') {
@@ -115,6 +115,5 @@ $(document).ready(function() {
     $("#numberOutput").text(result + "!!! BEEP!")
     } else 
     $("#numberOutput").text(result + "!!! GREAT NUMBER!")
-  }
   })
 });
