@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(rgb(14, 13, 13), rgb(46, 45, 45));
+  height:auto;
 }
 #jumbotron {
   background-color: rgb(255, 255, 255, .5);
@@ -44,4 +45,8 @@ h3, h4, #outputField{
 }
 #outputField {
   display: none;
+}
+#freeStuff {
+  margin-top: 100em;
+  display: block;
 }
