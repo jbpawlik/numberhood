@@ -48,11 +48,11 @@ Code:
   numberhood(12)
 Expected Output: "Boop!"
 
-Test 6: "If a number includes both a 1 and a 2, only return 'Boop!'"
+Test 7: "If a number includes both a 1 and a 2, only return 'Boop!'"
 Code:
   numberhood(21)
 
-Test 7: "If number includes 3, return "Won't you be my neighbor?""
+Test 8: "If number includes 3, return "Won't you be my neighbor?""
 Code:
   numberhood(31)
 Expected Output: "Won't you be my neighbor?"
