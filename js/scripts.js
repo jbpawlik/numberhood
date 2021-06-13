@@ -61,8 +61,8 @@ $(document).ready(function() {
   $('form#numberInput').submit(function(event) {
     event.preventDefault();
   
-    const number1 = $("#number1").val();
-    let result = numberhood(number1)
+    const userNumber = $("#userNumber").val();
+    let result = numberhood(userNumber)
 
     $("#output").text(result)
   })
