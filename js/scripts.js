@@ -99,7 +99,7 @@ $(document).ready(function() {
     $("#outputField").show();
 
     const userNumber = $("#userNumber").val();
-    let result = userNumber
+    let result = parseInt(userNumber)
 
     if (notANumber(userNumber) === false) {
       $("#output").text('ERROR! ERROR! ERROR!  DOES NOT COMPUTE; USER DID NOT ENTER NUMBER; PRINT: "IT IS A TERRIBLE DAY IN THE NEIGHBORHOOD :("  WILL SELF DESTRUCT IF NO NUMBER ENTERED! 10... 9... 8...')
