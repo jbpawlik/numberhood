@@ -29,6 +29,7 @@ function viralLoad(number) {
   return virusArray.map(digits => digits * 100).join(",") 
 }
 
+
 //User Interface Logic
 
 $(document).ready(function() {
