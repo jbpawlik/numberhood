@@ -18,36 +18,35 @@
 
 
 //Counts to 10 (works)
-function count() {
-  for (let i = 1; i <= 10; i++) {
-    console.log(i);
-  }
-}
-count();
+// function count() {
+//   for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//   }
+// }
+// count();
 
-//Count to number?
-function countUp(number) {
-  const newArray = []
-  for (let i = 0; i <= number; i++) {
-    newArray.push(i);
-  }
-}
-countUp(10);
+//Counts from 0 to number
+// function countUp(number) {
+//   const newArray = []
+//   for (let i = 0; i <= number; i++) {
+//     newArray.push(i);
+//   }
+// }
+// countUp(10);
+
+// function countToTen(number) {
+//   for (i = 1; i <= 10; i++)
+//   console.log(number)
+// } countToTen(10)
 
 
-function countToNumber(number) {
-  for (i = 1; i <= 10; i++)
-  console.log(number)
-} countToTen(10)
-
-
-function numberhood(number) {
-  let newArray = []
-  if (isNaN(number) === false) {
-    for (i = 0; i <= number; i++);
-    console.log(newArray.push(i));
-    return newArray;
-}} numberhood(111)
+// function numberhood(number) {
+//   let newArray = []
+//   if (isNaN(number) === false) {
+//     for (i = 0; i <= number; i++);
+//     console.log(newArray.push(i));
+//     return newArray;
+// }} numberhood(111)
 
 //DOESN'T RETURN A USEABLE OUTPUT?
 function numberhood(number) {
@@ -60,6 +59,7 @@ function numberhood(number) {
 
 //WORKS - BUT WHY? AND HOW TO GET USABLE OUTPUT?
 //CAN'T return newArray?
+//Return newArray hides the array somehow?
 function numberhood(number) {
   let newArray = [];
   for (i = 0; i <= number; i++) {
@@ -70,19 +70,48 @@ function numberhood(number) {
 
 //HOW TO USE ARRAY OUTPUT IN FOREACH LOOP
 function changeNumber(number) {
-  let inputArray = [numberhood(number)];
+  let inputArray = numberhood(number);
   inputArray.forEach(function(element) {
-    console.log(element)
+    console.log(inputArray)
   })
 } changeNumber(10)
 
 
 //WHY DOES THIS WORK BUT THE ARRAY DOESN'T? I DON'T GET IT
-let array = [];
-for (let i = 1; i <= 10; i++) {
-   array.push(i);
-} array
-(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let array = [];
+// for (let i = 1; i <= 10; i++) {
+//   array.push(i);
+// } array
+// (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+//Testing
+function numberhood(number) {
+  let newArray = [];
+  if (isNaN(number) === false) {
+  for (i = 0; i <= number; i++) {
+    newArray.push(i);
+  } return newArray;
+} numberhood(10)
+
+
+function changeNumbers(number) {
+  let inputArray = numberhood(number);
+  inputArray.forEach(function(element) {
+    console.log(element)
+    console.log(inputArray);
+  })
+} changeNumbers(10)
+
+
+
+
+
+
+
+
+
+
 
 
 //for loop
@@ -97,6 +126,11 @@ function numberhood(number) {
       }
     }}
 } numberhood(0)
+
+function viralLoad(number) {
+  let virusArray = number.toString().split("");
+  return virusArray.map(digits => digits * 100).join(",") 
+}
 
 // //User Interface Logic
 
