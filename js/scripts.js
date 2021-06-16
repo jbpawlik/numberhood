@@ -68,7 +68,7 @@ function numberhood(number) {
   }
 } numberhood(10)
 
-//HOW TO USE ARRAY OUTPUT IN FOREACH LOOP
+//HOW TO USE ARRAY OUTPUT IN FOREACH LOOP (not working)
 function changeNumber(number) {
   let inputArray = numberhood(number);
   inputArray.forEach(function(element) {
@@ -92,20 +92,24 @@ function numberhood(number) {
   for (i = 0; i <= number; i++) {
     newArray.push(i);
   } return newArray;
-} numberhood(10)
+}} numberhood(10)
 
+// How do I get newArray from numberhood function?
+// function changeNumbers(number) {
+//   let newArray = numberhood(number)
+//   newArray.forEach(function(element) {
+//     console.log(element);
+//   })
+// } changeNumbers(10)
 
 function changeNumbers(number) {
-  let inputArray = numberhood(number);
-  inputArray.forEach(function(element) {
-    console.log(element)
-    console.log(inputArray);
-  })
+  let newArray = numberhood(number)
+  newArray.forEach(function(element) {
+    if (element === 1) {
+      console.log(element = 'Boop!')
+    } console.log(newArray)
+  }) 
 } changeNumbers(10)
-
-
-
-
 
 
 
