@@ -1,11 +1,11 @@
-# Mr. Roboger's Numberhood
+# Mr. Robogers' Numberhood
 ## by James Benjamin Pawlik (http://github.com/jbpawlik)
 
 ### __Description__
-Mr. Roboger's Numberhood is an interactive website that takes numerical input from a user and returns numbers and strings depending on the number. For example, numbers that contain a 1 return "Beep!" while numbers with a 2 return "Boop!" Each subsequent rule has higher importance and overrides previous rules. 
+Mr. Robogers' Numberhood is an interactive website that takes numerical input from a user and returns numbers and strings depending on the number. For example, numbers that contain a 1 return "Beep!" while numbers with a 2 return "Boop!" Each subsequent rule has higher importance and overrides previous rules. 
 
 ### __Technologies Used__
-Mr. Roboger's Numberhood uses custom HTML and CSS. JavaScript and JQuery are used for the business and interface logic.
+Mr. Robogers' Numberhood uses custom HTML and CSS. JavaScript and JQuery are used for the business and interface logic.
 
 ### __Setup/Installation__
 1. Download or clone the [repository](http://github.com/jbpawlik/numberhood) to your local machine
@@ -53,7 +53,7 @@ Expected Output: "Won't you be my neighbor?"
 ### __Known Bugs / Future Goals__
 No bugs have been found or reported. Please contact the author if you experience poor performance.
 
-Future goals for Mr. Roboger's Numberhood are to take alphanumberic and mixed data to return a wider variety of responses.
+Future goals for Mr. Robogers' Numberhood are to take alphanumberic and mixed data to return a wider variety of responses.
 
 ### __License__
 This software is licensed under the [BSD license](license.txt).

@@ -94,6 +94,12 @@ function numberhood(number) {
   } return newArray;
 }} numberhood(10)
 
+
+
+//Changes to 'Beep!' without using loop
+let newArray = numberhood(11)
+newArray[newArray.indexOf(1)] = 'Boop!'
+
 // How do I get newArray from numberhood function?
 // function changeNumbers(number) {
 //   let newArray = numberhood(number)
@@ -102,15 +108,16 @@ function numberhood(number) {
 //   })
 // } changeNumbers(10)
 
+//Can change item in array but can't use .includes(1)
+//Need alternative that can be used on array item
 function changeNumbers(number) {
   let newArray = numberhood(number)
-  newArray.forEach(function(element) {
-    if (element === 1) {
-      console.log(element = 'Boop!')
+  newArray.forEach(function(i) {
+    if (newArray[i] === 1) {
+      newArray[i] = 'Beep!'
     } console.log(newArray)
   }) 
 } changeNumbers(10)
-
 
 
 
