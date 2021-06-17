@@ -9,25 +9,17 @@ function notANumber(number) {
   }
 }
 
-//HOW TO USE ARRAY OUTPUT IN FOREACH LOOP (not working)
-function changeNumber(number) {
-  let inputArray = numberhood(number);
-  inputArray.forEach(function(element) {
-    console.log(inputArray)
-  })
-} changeNumber(10)
-
-
 //Returns an array from 0 to the input number
 function numberhood(number) {
   let newArray = [];
   if (isNaN(number) === false) {
-  for (i = 0; i <= number; i++) {
-    newArray.push(i);
-  } return newArray;
-}}
+    for (i = 0; i <= number; i++) {
+      newArray.push(i);
+    } return newArray;
+  }
+}
 
-//Returns array with 1s, 2s, and 3s change
+//Returns array with 1s, 2s, and 3s changed
 function changeNumbers(number) {
   let newArray = numberhood(number)
   newArray.forEach(function(i) {
@@ -38,45 +30,11 @@ function changeNumbers(number) {
       newArray[i] = 'Boop!'
     } else if (elementString.includes(1) === true) {
       newArray[i] = 'Beep!'
-    }
+    } 
   }) 
+  return newArray
 } changeNumbers(21)
 
-
-
-
-
-//Returns an array with 1s changed to 'Beep!
-function changeNumbers(number) {
-  let newArray = numberhood(number)
-  newArray.forEach(function(i) {
-    let elementString = i.toString()
-    if (elementString.includes(1) === true) {
-      newArray[i] = 'Beep!'
-    } console.log(newArray)
-  }) 
-} changeNumbers(21)
-
-
-
-
-
-
-
-
-
-//for loop
-// function numberhood(number) {
-//   let numberInput = number.toString();
-//   const numberArray = [numberInput.split("")];
-//   if (isNaN(number) === false) {
-//     for (i = 0; i <= numberArray.length; i+=1) {
-//       if (numberArray.includes(1)); {
-//         numberArray.push(i);
-//         return numberArray.toString();
-//       }
-//     }}
-// } numberhood(0)
 
 function viralLoad(number) {
   let virusArray = number.toString().split("");
@@ -90,14 +48,18 @@ $(document).ready(function() {
     event.preventDefault();
     
   $("#outputField").show();
-
   const userNumber = $("#userNumber").val();
-  let result = userNumber
-
+  
+  
   if (notANumber(userNumber) === true) {
-    $("#numberOutput").text('ERROR! ERROR! ERROR!  DOES NOT COMPUTE; USER DID NOT ENTER NUMBER; PRINT: "IT IS A TERRIBLE DAY IN THE NEIGHBORHOOD :("  WILL SELF DESTRUCT IF NO NUMBER ENTERED! 10... 9... 8...')
+    $('#numberOutput').text('ERROR! ERROR! ERROR!  DOES NOT COMPUTE; USER DID NOT ENTER NUMBER; PRINT: "IT IS A TERRIBLE DAY IN THE NEIGHBORHOOD :("  WILL SELF DESTRUCT IF NO NUMBER ENTERED! 10... 9... 8...')
+    $('#virusOutput').text(userNumber)
+  } else {
+    $('#numberOutput').html("[" + changeNumbers(userNumber).join("] , [") + "]");
+    $('#virusOutput').text(userNumber)
   }
-});
+  });
+
   $('button#virusButton').click(function(event) {
     event.preventDefault();
 
