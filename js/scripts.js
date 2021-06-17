@@ -35,7 +35,6 @@ function changeNumbers(number) {
   return newArray
 } changeNumbers(21)
 
-
 function viralLoad(number) {
   let virusArray = number.toString().split("");
   return virusArray.map(digits => digits * 100).join(",") 
@@ -50,7 +49,6 @@ $(document).ready(function() {
   $("#outputField").show();
   const userNumber = $("#userNumber").val();
   
-  
   if (notANumber(userNumber) === true) {
     $('#numberOutput').text('ERROR! ERROR! ERROR!  DOES NOT COMPUTE; USER DID NOT ENTER NUMBER; PRINT: "IT IS A TERRIBLE DAY IN THE NEIGHBORHOOD :("  WILL SELF DESTRUCT IF NO NUMBER ENTERED! 10... 9... 8...')
     $('#virusOutput').text(userNumber)
@@ -58,7 +56,7 @@ $(document).ready(function() {
     $('#numberOutput').html("[" + changeNumbers(userNumber).join("] , [") + "]");
     $('#virusOutput').text(userNumber)
   }
-  });
+});
 
   $('button#virusButton').click(function(event) {
     event.preventDefault();
