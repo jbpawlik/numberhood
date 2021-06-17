@@ -1,72 +1,13 @@
-//WIP: I misunderstood the prompt. The code that is not commented out is what I am working on for the resubmission. The commented-out code below it is a fully functional answer to the wrong problem. :)  My gh-pages site at jbpawlik.github.io/numberhood has the working original.
-
 // Business Logic
 
-// function notANumber(number) {
-  function notANumber(number) {
-    if (isNaN(number) === true) {
-      return true;
-    } else {
-      return false;
-    }
+// Determines if input is a number
+function notANumber(number) {
+  if (isNaN(number) === true) {
+    return true;
+  } else {
+    return false;
   }
-
-//Loops need to: 
-//determine whether input number contains a 1, 2, or 3
-//output a count up from 0
-//replace 1, 2, or 3
-
-
-//Counts to 10 (works)
-// function count() {
-//   for (let i = 1; i <= 10; i++) {
-//     console.log(i);
-//   }
-// }
-// count();
-
-//Counts from 0 to number
-// function countUp(number) {
-//   const newArray = []
-//   for (let i = 0; i <= number; i++) {
-//     newArray.push(i);
-//   }
-// }
-// countUp(10);
-
-// function countToTen(number) {
-//   for (i = 1; i <= 10; i++)
-//   console.log(number)
-// } countToTen(10)
-
-
-// function numberhood(number) {
-//   let newArray = []
-//   if (isNaN(number) === false) {
-//     for (i = 0; i <= number; i++);
-//     console.log(newArray.push(i));
-//     return newArray;
-// }} numberhood(111)
-
-//DOESN'T RETURN A USEABLE OUTPUT?
-function numberhood(number) {
-  let newArray = [];
-  for (i = 0; i <= number; i++) {
-    newArray.push(i);
-    return newArray;
-  }
-} numberhood(10)
-
-//WORKS - BUT WHY? AND HOW TO GET USABLE OUTPUT?
-//CAN'T return newArray?
-//Return newArray hides the array somehow?
-function numberhood(number) {
-  let newArray = [];
-  for (i = 0; i <= number; i++) {
-    console.log(newArray.push(i));
-    console.log(newArray);
-  }
-} numberhood(10)
+}
 
 //HOW TO USE ARRAY OUTPUT IN FOREACH LOOP (not working)
 function changeNumber(number) {
@@ -77,47 +18,46 @@ function changeNumber(number) {
 } changeNumber(10)
 
 
-//WHY DOES THIS WORK BUT THE ARRAY DOESN'T? I DON'T GET IT
-// let array = [];
-// for (let i = 1; i <= 10; i++) {
-//   array.push(i);
-// } array
-// (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-
-//Testing
+//Returns an array from 0 to the input number
 function numberhood(number) {
   let newArray = [];
   if (isNaN(number) === false) {
   for (i = 0; i <= number; i++) {
     newArray.push(i);
   } return newArray;
-}} numberhood(10)
+}}
 
-
-
-//Changes to 'Beep!' without using loop
-let newArray = numberhood(11)
-newArray[newArray.indexOf(1)] = 'Boop!'
-
-// How do I get newArray from numberhood function?
-// function changeNumbers(number) {
-//   let newArray = numberhood(number)
-//   newArray.forEach(function(element) {
-//     console.log(element);
-//   })
-// } changeNumbers(10)
-
-//Can change item in array but can't use .includes(1)
-//Need alternative that can be used on array item
+//Returns array with 1s, 2s, and 3s change
 function changeNumbers(number) {
   let newArray = numberhood(number)
   newArray.forEach(function(i) {
-    if (newArray[i] === 1) {
+    let elementString = i.toString()
+    if (elementString.includes(3) === true) {
+      newArray[i] = "Won't you be my neighbor?'"
+    } else if (elementString.includes(2) === true) {
+      newArray[i] = 'Boop!'
+    } else if (elementString.includes(1) === true) {
+      newArray[i] = 'Beep!'
+    }
+  }) 
+} changeNumbers(21)
+
+
+
+
+
+//Returns an array with 1s changed to 'Beep!
+function changeNumbers(number) {
+  let newArray = numberhood(number)
+  newArray.forEach(function(i) {
+    let elementString = i.toString()
+    if (elementString.includes(1) === true) {
       newArray[i] = 'Beep!'
     } console.log(newArray)
   }) 
-} changeNumbers(10)
+} changeNumbers(21)
+
+
 
 
 
@@ -126,17 +66,17 @@ function changeNumbers(number) {
 
 
 //for loop
-function numberhood(number) {
-  let numberInput = number.toString();
-  const numberArray = [numberInput.split("")];
-  if (isNaN(number) === false) {
-    for (i = 0; i <= numberArray.length; i+=1) {
-      if (numberArray.includes(1)); {
-        numberArray.push(i);
-        return numberArray.toString();
-      }
-    }}
-} numberhood(0)
+// function numberhood(number) {
+//   let numberInput = number.toString();
+//   const numberArray = [numberInput.split("")];
+//   if (isNaN(number) === false) {
+//     for (i = 0; i <= numberArray.length; i+=1) {
+//       if (numberArray.includes(1)); {
+//         numberArray.push(i);
+//         return numberArray.toString();
+//       }
+//     }}
+// } numberhood(0)
 
 function viralLoad(number) {
   let virusArray = number.toString().split("");
