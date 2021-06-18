@@ -1,14 +1,5 @@
 // Business Logic
 
-// Determines if input is a number
-function notANumber(number) {
-  if (isNaN(number) === true) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 //Returns an array from 0 to the input number
 function numberhood(number) {
   let newArray = [];
@@ -33,8 +24,9 @@ function changeNumbers(number) {
     } 
   }) 
   return newArray
-} changeNumbers(21)
+}
 
+//Calculates viral load if user clicks on spam link in email
 function viralLoad(number) {
   let virusArray = number.toString().split("");
   return virusArray.map(digits => digits * 100).join(",") 
